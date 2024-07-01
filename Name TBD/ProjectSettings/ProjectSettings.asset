@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 26
-  productGUID: d992ded3bd395d449a1c44674f159982
+  productGUID: c1cc9d49a880f7346bbf2db4179eea8c
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -669,10 +669,10 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   activeInputHandler: 0
   windowsGamepadBackendHint: 0
-  cloudProjectId: 25b645c0-febf-4fd5-a831-ab327cde9435
+  cloudProjectId: c8d970d0-ae0f-4e7c-854b-0df004147620
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: Name TBD 2024-07-01_13-21-37
+  projectName: Name TBD 2024-07-01_14-03-31
   organizationId: lonardi
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
