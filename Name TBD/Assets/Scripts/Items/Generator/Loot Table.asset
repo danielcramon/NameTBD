@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba45d4432a24af547bc382cd4a295fa2, type: 3}
+  m_Name: Loot Table
+  m_EditorClassIdentifier: 
+  commonItems:
+  - {fileID: 3896543840893900631, guid: 62561508a3b133f4c90cba01b293a4a8, type: 3}
+  - {fileID: -4456799737513071694, guid: ecd91be1525fc6242a2ad7b990ddd5df, type: 3}
+  - {fileID: 4680060766736628601, guid: b2c2d5e7f6b6fb649a1235f53aa49fab, type: 3}
+  - {fileID: 8419534009338425758, guid: 9730ef9b6132ed549be27a6c9e70ce3f, type: 3}
+  rareItems: []
+  epicItems: []
+  uniqueItems: []
