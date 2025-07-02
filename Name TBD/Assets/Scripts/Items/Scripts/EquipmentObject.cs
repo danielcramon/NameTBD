@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class EquipmentObject : InventoryObjects
 {
+
     public int baseDamage;
 
     public PrimaryAttribute primary1;

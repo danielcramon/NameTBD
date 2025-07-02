@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4074147683929132881}
   - component: {fileID: 8903747698663206661}
   - component: {fileID: 8419534009338425758}
+  - component: {fileID: -8686678074850314830}
   m_Layer: 5
   m_Name: Melee Weapon
   m_TagString: Untagged
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   equipmentType: 3
+  itemName: Long Sword
   description: 
   baseDamage: 50
   primary1: 0
@@ -112,3 +114,16 @@ MonoBehaviour:
   ancorPosition: {x: 0.36, y: -0.18, z: 0}
   ancorRotation: {x: 0, y: 0, z: 0.50000006, w: -0.8660254}
   weapon: {fileID: 6589088561146305719, guid: 239af0cdf1c711e4ca84beee6fec92e1, type: 3}
+--- !u!114 &-8686678074850314830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951754768809126146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c14b2cdd9be25447841c88a9f0b9bae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipmentObject: {fileID: 8419534009338425758}

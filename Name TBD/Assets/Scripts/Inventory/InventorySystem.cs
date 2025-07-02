@@ -43,6 +43,14 @@ public class InventorySystem : MonoBehaviour
             {
                 InventoryObjects temp = inventoryItems[index];
                 inventoryItems[index] = null;
+                if (temp.GetComponent<MouseOverItem>())
+                {
+                    temp.GetComponent<MouseOverItem>().ItemClicked();
+                }
+                if (temp.GetComponent<MouseOverWeapon>())
+                {
+                    temp.GetComponent<MouseOverWeapon>().ItemClicked();
+                }
                 equipmentSystem.AddEquipment(temp);
             }
             else

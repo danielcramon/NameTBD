@@ -9,7 +9,7 @@ public class HealthManager : MonoBehaviour
     public int maxHealth;
 
 
-    void Start()
+    protected virtual void Start()
     {
         currentHealth = maxHealth;
     }
@@ -17,5 +17,18 @@ public class HealthManager : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
+    }
+
+    protected virtual void Update()
+    {
+        if(currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    protected virtual void Die()
+    {
+        
     }
 }

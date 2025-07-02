@@ -13,6 +13,10 @@ public class EquipmentSystem : MonoBehaviour
 
     private void Start()
     {
+        if(playerCharacter != null)
+        {
+            playerCharacter.CalculateSecondaries();
+        }
         UpdateStats();
         transform.GetChild(8).GetComponent<Image>().sprite = playerCharacter.characterSprite;
     }
@@ -126,6 +130,7 @@ public class EquipmentSystem : MonoBehaviour
         }
 
         playerCharacter.stats.UpdateStats(equipmentObjects);
+        playerCharacter.CalculateSecondaries();
         if(playerCharacter.weapon != null)
         {
             playerCharacter.weapon.GetComponent<MeleeWeapon>().SetDamage(playerCharacter.stats.combinedDamage);
@@ -145,5 +150,6 @@ public class EquipmentSystem : MonoBehaviour
         transform.GetChild(7).GetChild(7).GetComponent<TextMeshProUGUI>().text = "Crit Damage: " + playerCharacter.stats.combinedCritDamage;
         transform.GetChild(7).GetChild(8).GetComponent<TextMeshProUGUI>().text = "Magic Find: " + playerCharacter.stats.combinedMagicFind;
         transform.GetChild(7).GetChild(9).GetComponent<TextMeshProUGUI>().text = "Move Speed: " + playerCharacter.stats.combinedMovementSpeed;
+        transform.GetChild(7).GetChild(10).GetComponent<TextMeshProUGUI>().text = "Spell Damage: " + playerCharacter.stats.combinedSpellDamage;
     }
 }

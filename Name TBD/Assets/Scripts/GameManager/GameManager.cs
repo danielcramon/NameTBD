@@ -19,9 +19,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public CharacterSelector selector;
+
     private void Awake()
     {
         _instance = this;
+        DontDestroyOnLoad(this);
     }
 
     // Start is called before the first frame update

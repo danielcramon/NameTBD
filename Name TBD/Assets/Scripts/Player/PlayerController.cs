@@ -36,4 +36,9 @@ public class PlayerController : MonoBehaviour
     {
         body.velocity = moveDir * movespeed;
     }
+
+    public void SetMovementSpeed(float speed)
+    {
+        movespeed = speed;
+    }
 }

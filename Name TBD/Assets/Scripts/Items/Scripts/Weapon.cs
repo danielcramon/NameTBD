@@ -17,6 +17,7 @@ public enum SecondaryAttribute
     CritDamage,
     MovementSpeed,
     MagicFind,
+    SpellDamage,
     None
 }
 

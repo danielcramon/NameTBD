@@ -17,6 +17,7 @@ public class PlayerStats : MonoBehaviour
     [SerializeField] int baseCritDamage;
     [SerializeField] int baseMagicFind;
     [SerializeField] int baseMovementSpeed;
+    [SerializeField] int baseSpellDamage;
 
     List<UniqueEffect> effects;
 
@@ -33,6 +34,7 @@ public class PlayerStats : MonoBehaviour
     public int combinedCritDamage;
     public int combinedMagicFind;
     public int combinedMovementSpeed;
+    public int combinedSpellDamage;
 
     private void Awake()
     {
@@ -48,6 +50,7 @@ public class PlayerStats : MonoBehaviour
         combinedCritDamage = baseCritDamage;
         combinedMagicFind = baseMagicFind;
         combinedMovementSpeed = baseMovementSpeed;
+        combinedSpellDamage = baseSpellDamage;
 
         gameObject.GetComponent<PlayerHealthManager>().SetHealth(combinedHealth);
     }
@@ -127,6 +130,9 @@ public class PlayerStats : MonoBehaviour
                     case SecondaryAttribute.MagicFind:
                         combinedMagicFind += item.secondary1Value;
                         break;
+                    case SecondaryAttribute.SpellDamage:
+                        combinedSpellDamage += item.secondary1Value;
+                        break;
                     case SecondaryAttribute.None:
                         break;
                     default:
@@ -145,6 +151,9 @@ public class PlayerStats : MonoBehaviour
                         break;
                     case SecondaryAttribute.MagicFind:
                         combinedMagicFind += item.secondary2Value;
+                        break;
+                    case SecondaryAttribute.SpellDamage:
+                        combinedSpellDamage += item.secondary2Value;
                         break;
                     case SecondaryAttribute.None:
                         break;

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7676232109934345210}
   - component: {fileID: 2827186868598705565}
   - component: {fileID: 3896543840893900631}
+  - component: {fileID: 5656125530401634957}
   m_Layer: 5
   m_Name: Belt of Biceps
   m_TagString: Untagged
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   equipmentType: 4
+  itemName: Belt of Biceps
   description: 
   baseDamage: 0
   primary1: 0
@@ -104,8 +106,21 @@ MonoBehaviour:
   secondary1Value: 0
   secondary1RangeMin: 25
   secondary1RangeMax: 50
-  secondary2: 4
+  secondary2: 5
   secondary2Value: 0
   secondary2RangeMin: 0
   secondary2RangeMax: 0
   unique: 0
+--- !u!114 &5656125530401634957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389700452568274000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff899dbfa4de54044bc5b3b3b7b804aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipmentObject: {fileID: 3896543840893900631}

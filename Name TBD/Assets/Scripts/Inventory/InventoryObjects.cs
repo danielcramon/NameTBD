@@ -23,6 +23,7 @@ public abstract class InventoryObjects : MonoBehaviour
 {
     public Type type;
     public EquipmentType equipmentType;
+    public string itemName;
     [TextArea(15, 20)]
     public string description;
 

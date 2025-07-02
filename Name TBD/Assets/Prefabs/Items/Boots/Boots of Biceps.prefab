@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3704391033941550268}
   - component: {fileID: 5767682673831098879}
   - component: {fileID: -4456799737513071694}
+  - component: {fileID: -8825489366033664865}
   m_Layer: 5
   m_Name: Boots of Biceps
   m_TagString: Untagged
@@ -90,6 +91,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   equipmentType: 6
+  itemName: Boots of Biceps
   description: 
   baseDamage: 0
   primary1: 0
@@ -109,3 +111,16 @@ MonoBehaviour:
   secondary2RangeMin: 25
   secondary2RangeMax: 50
   unique: 0
+--- !u!114 &-8825489366033664865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4008258486284048421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff899dbfa4de54044bc5b3b3b7b804aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  equipmentObject: {fileID: -4456799737513071694}
